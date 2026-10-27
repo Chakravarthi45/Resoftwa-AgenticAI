@@ -1,0 +1,14 @@
+Rule 1: Trust the answer more when every model scores top marks on a well-documented fundamental.
+Example: Q4 (Open SQL vs Native SQL), Q5 (CDS Views vs SE11 views), Q9 (table buffering) and Q10 (SELECT SINGLE vs UP TO 1 ROWS) all got 5/5/5. These are stable, textbook ABAP topics, so an easy skim is enough.
+
+Rule 2: Check more when the question is about performance, memory or time complexity.
+Example: Q1 (field symbols, memory and performance) scored 4/4/3, and Q2 (internal table types and time complexities) scored 3/4/3. These were your two lowest rows. Such answers contain specific claims (O(1) vs O(log n), copy vs reference) that can be wrong while still sounding confident.
+
+Rule 3: When models disagree, treat it as a warning and verify.
+Example: On Q2, Claude scored 4 while ChatGPT and Gemini scored 3, and on Q1 Gemini scored 3 while the others scored 4. A split means at least one answer has a mistake, so compare the answers side by side and check the disputed point in SAP help or a test program.
+
+Rule 4: For conceptual “what’s the difference” questions, trust the answer, but run a second opinion if one model scores lower.
+Example: Q6 (Interface vs Abstract Class), Q7 (static vs instance members) and Q8 (constructors) scored 5/5/4. The core idea was right in most answers, and the lower score points to a missing or weaker detail, which a second model can fill in.
+
+Rule 5: Judge the model per question, not by its overall reputation.
+Example: Gemini has the lowest average (4.2), but it scored 5 on Q4, Q5, Q9 and Q10. Claude, the top average, still scored only 4 on Q1 and Q2. No model is safe to trust blindly on every topic.
